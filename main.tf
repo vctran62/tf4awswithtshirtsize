@@ -46,7 +46,7 @@ resource "aws_instance" "this" {
   ami                     = local.ami
   disable_api_termination = false
   instance_type           = local.instance_type
-  key_name                = [aws_key_pair.this.id]
+  key_name                = "vinhawslinuxcred"
   vpc_security_group_ids  = [aws_security_group.this.id]
   monitoring              = false
   subnet_id               = var.subnet_id
