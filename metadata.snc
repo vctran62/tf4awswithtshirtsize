@@ -1,0 +1,11 @@
+"Metadata": {
+          "SNC::Parameter::Metadata": {
+                "vpc_id":{
+                    "datasource":"ServiceNow::Pools::NetworkPool.getObjectsByLDC"
+                },
+                "subnet_id":{
+                    "datasource":"ServiceNow::Pools::SubnetPool.getObjectsByNetwork",
+                    "datasourceFilter":{"Network":"vpc_id"}
+                }
+             }
+    }
