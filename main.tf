@@ -50,10 +50,10 @@ resource "aws_instance" "this" {
   vpc_security_group_ids  = [aws_security_group.this.id]
   monitoring              = false
   subnet_id               = var.subnet_id
-  iam_instance_profile    = "default_instance_profile-us-east-1"
+  #iam_instance_profile    = "default_instance_profile-us-east-1"
 
   tags = {
-    Name = "snowpov"
+    Name = "vinhtran"
   }
 }
 
